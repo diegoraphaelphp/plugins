@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery - Hint</title>
+<!--
+	*** desenvolvido por linhadecomando.com ***
+-->
+<script type='text/javascript' src='js/jquery.js'></script>
+<link rel="stylesheet" href="css/tipsy.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+</head>
+
+<body>
+<script type='text/javascript'>
+  $(function() {
+
+    $('#exemplo-simples').tipsy();
+    
+    $('#exemplo-fade').tipsy({fade: true});
+    
+    $('#exemplo-html').tipsy({html: true });
+
+  });
+</script>
+
+<p><a id='exemplo-simples' href='#' title='Exemplo Simples'>Exemplo Simples</a></p>
+<br />
+
+<p><a id='exemplo-fade' href='#' title='Exemplo Fade In/Out'>Exemplo Fade In/Out</a></p>
+<br />
+
+<p><a id='exemplo-html' href='#' title='<b style="color:#000000">Título do Hint</b><br> Exemplo com HTML'>Exemplo com HTML</a></p>
+
+<p><a id='exemplo-html' href='#' title='<b style="color:#000000">Título do Hint</b><br> Exemplo com HTML'>Exemplo com HTML</a></p>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>markItUp! Universal markup editor</title>
+<link rel="stylesheet" type="text/css" href="images/style.css" />
+<!-- jQuery -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<!-- markItUp! -->
+<script type="text/javascript" src="markitup/jquery.markitup.js"></script>
+<!-- markItUp! toolbar settings -->
+<script type="text/javascript" src="markitup/sets/default/set.js"></script>
+<!-- markItUp! skin -->
+<link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css" />
+<!--  markItUp! toolbar skin -->
+<link rel="stylesheet" type="text/css" href="markitup/sets/default/style.css" />
+</head>
+<body>
+<script type="text/javascript">
+<!--
+jQuery(document).ready(function()	{
+	// Add markItUp! to your textarea in one line
+	// $('textarea').markItUp( { Settings }, { OptionalExtraSettings } );
+	jQuery('#markItUp').markItUp(mySettings);
+	
+	// You can add content from anywhere in your page
+	// $.markItUp( { Settings } );	
+	jQuery('.add').click(function() {
+ 		$.markItUp( { 	openWith:'<opening tag>',
+						closeWith:'<\/closing tag>',
+						placeHolder:"New content"
+					}
+				);
+ 		return false;
+	});
+	
+	// And you can add/remove markItUp! whenever you want
+	// $(textarea).markItUpRemove();
+	jQuery('.toggle').click(function() {
+		if (jQuery("#markItUp.markItUpEditor").length === 1) {
+ 			jQuery("#markItUp").markItUpRemove();
+			jQuery("span", this).text("get markItUp! back");
+		} else {
+			jQuery('#markItUp').markItUp(mySettings);
+			jQuery("span", this).text("remove markItUp!");
+		}
+ 		return false;
+	});
+});
+-->
+</script>
+<textarea id="markItUp" cols="80" rows="20"></textarea>
+</body>
+</html>

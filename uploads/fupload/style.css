@@ -1,0 +1,32 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 16px;
+	color: #006699;
+	margin: 10px;
+}
+
+p {
+	margin: 15px;
+}
+
+#debug-bar {
+	border: 1px solid green;
+	padding: 10px;
+	background-color: #FFFFEF;
+}
+
+#debug-bar p {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+pre {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #CF9526;
+	background-color: #EFEFEF;
+}

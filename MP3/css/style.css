@@ -1,0 +1,54 @@
+body, h1, h2, h3, h4, pre { margin: 0; padding: 0; background: aliceblue }
+		a { color: dodgerblue }
+		br { line-height: 1.4em }
+		pre {
+			padding: 6px;
+			border: 2px solid salmon;
+			background-color: royalblue;
+			color: white;
+		}
+		#content {padding: 10px; font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;}
+		#content p {margin: 0; padding: 0 }
+		#credits {
+			width: 600px;
+			padding: 6px;
+			border: 1px solid gray;
+			background-color: ghostwhite;
+			color: darkslategray;
+			font-size: 0.7em;
+			font-style: italic;
+			line-height: 1.3em;
+		}
+		#credits h4 { font-size: 1.3em; }
+		#date { float: right; display: inline }
+		#info li { font-size: 0.8em }
+		#music p {
+			padding: 6px;
+			border: 1px solid dodgerblue;
+			background-color: #fff;
+			color: darkslategray;
+		}
+		#twitter p {
+			background-image: url('/images/twitter-t.png');	background-repeat: none;
+		}
+		h1 {
+			color: #fff;
+			background: firebrick;
+			padding: 10px;
+			font-family: "Trebuchet MS",Tahoma, Arial, sans-serif;
+			font-size: 150%;
+			margin-bottom: 12px;
+		}
+		h1 a { text-decoration: none; color: lightblue; border-bottom: 1px dotted lightblue  }
+		h2 { color: firebrick; border-bottom: 1px dashed firebrick; margin-bottom: 8px }
+		h4 { color: firebrick }
+		.byline { text-align: right; color: gray; font-size: 0.7em; font-style: italic }
+		.email { unicode-bidi: bidi-override; direction: rtl; }
+		.mp3 { color: firebrick; font-family: Georgia, "Times New Roman", Times, serif; font-size: 0.9em; }
+		.red { color: red }
+		table {
+			display: inline;
+			float: right;
+			width: 130px;
+			border: 1px solid mediumslateblue;
+		}

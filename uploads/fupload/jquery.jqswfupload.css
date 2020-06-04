@@ -1,0 +1,163 @@
+.jqswfupload-container {
+	width: 450px;
+}
+
+.jqswfupload-container a {
+	text-decoration: none;
+	color: #341E6B;
+	font-weight: bold;
+}
+
+.jqswfupload-container a img {
+	border: none;
+}
+
+.jqswfupload-warning, .jqswfupload-success, .jqswfupload-addfiles {
+	height: 29px;
+	border: 1px solid #7E87A6;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.jqswfupload-warning p, .jqswfupload-success p  {
+	margin: 8px 10px;
+	padding-left: 20px;
+}
+
+.jqswfupload-warning {
+	background: url('images/bg-warning.gif') repeat-x;
+	color: #671D09;
+}
+.jqswfupload-warning p {
+	background: url('images/icon-warning.png') left center no-repeat;
+}
+
+.jqswfupload-success {
+	background: url('images/bg-success.gif') repeat-x;
+	color: #013704;
+}
+.jqswfupload-success p {
+	background: url('images/icon-success.png') left center no-repeat;
+}
+
+.jqswfupload-addfiles {
+	background: url('images/bg-add.gif') repeat-x;
+	height: 20px;
+}
+.jqswfupload-container table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 10px 0;
+}
+
+.jqswfupload-container table td, .jqswfupload-container table th {
+	padding: 2px;
+}
+
+.jqswfupload-container table th, .jqswfupload-container table tfoot td  {
+	font-weight: bold;
+	text-align: left;
+	background-color: #EFF7FF;
+}
+
+.jqswfupload-container table td {
+	border-top: 1px solid #EFF7FF;
+}
+
+.jqswfupload-controller {
+	height: 21px;
+	background-color: #EFF7FF;
+}
+
+.jqswfupload-controller ul {
+	float: left;
+	margin: 2px;
+	padding: 0;
+}
+
+.jqswfupload-controller ul li {
+	float: left;
+	list-style-type: none;
+	margin: 0 10px;
+	list-style-type: none;
+
+}
+
+.jqswfupload-controller ul li a {
+	padding: 2px 0 0 12px;
+}
+
+.jqswfupload-controller ul li a:hover {
+	color: #92BBDE;
+}
+
+.jqswfupload-start {
+	background: url('images/icon-play.png') no-repeat 0 6px;
+}
+
+.jqswfupload-pause {
+	background: url('images/icon-pause.png') no-repeat 0 6px;
+}
+
+.jqswfupload-stop {
+	background: url('images/icon-stop.png') no-repeat 0 6px;
+}
+
+/* File progressbar
+-----------------------------------*/
+
+.jqswfupload-container table tbody tr td {
+	width: 60%;
+}
+
+.jqswfupload-container table tbody tr td div {
+	background-image: url('images/bg-file-progress.gif');
+	width: 0%;
+	white-space: pre;
+}
+
+/* overall progressbar
+----------------------------------*/
+.ui-progressbar  {
+    height: 1.3em;
+    text-align: left;
+}
+.ui-progressbar .ui-progressbar-value{
+    margin: -1px;
+    height: 100%;
+	background: url('images/bg-overall-progress.gif');
+}
+
+.jqswfupload-overall {
+	width: 0%;
+	height: 100%;
+	background: url('images/bg-overall-progress.gif');
+}
+
+.jqswfupload-overall-container {
+	float: right;
+	border: 1px solid #A7ACB2;
+	width: 200px;
+	margin: 3px 6px 0 0;
+	text-align: right;
+	height: 12px;
+	font-size: 10px;
+	background: url('images/bg-overall-bar.gif');
+}
+
+.jqswfupload-actions {
+	padding: 0 0 0 15px !important;
+}
+
+.jqswfupload-error {
+	color: red;
+}
+#jqswfupload-destroy {
+	display: block;
+	margin: 10px 0;
+	font-size: 10px;
+}
+
+#jqswfupload-destroy:hover {
+	text-decoration: none;
+}

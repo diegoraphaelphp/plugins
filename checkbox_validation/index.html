@@ -1,0 +1,62 @@
+<html>
+	<head>
+			<title>jQuery Tutorial: Multiple Checkbox Validation</title>
+			<script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
+			<style type="text/css">body{font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px}
+			h1, h2{font-size:20px;}</style>
+	</head>
+	<body>
+	fo	<script type="text/javascript">
+		function valida(){
+				if (!isCheckedById("selector"))
+				{
+					alert ("Please select at least one selector");
+					return false;
+				}
+				else
+				{
+                                    alert('OK')
+					return true; //submit the form
+				}				
+			}
+			
+			function isCheckedById(id)
+			{
+				var checked = $("input[@id="+id+"]:checked").length;
+				if (checked == 0)
+				{
+					return false;
+				}
+				else
+				{
+					return true;
+				}
+			}
+		
+		</script>
+		<a href="http://jetlogs.org/2008/08/19/jquery-multiple-checkbox-validation/">&laquo; Code Explanation</a> | <a href="checkbox_validation.zip">Download Source</a>
+		<h2>jQuery Tutorial: Multiple Checkbox Validation</h2>
+		<p>This is a demo on how to validate multiple checkbox groups/array.</p>		
+
+		<form method="POST" action="checkbox_post.php">
+			<b>Which of the following jQuery selectors do you usually use? (Please select at least one)</b><br>
+			<input type="checkbox" name="selector[]" id="selector" value="id">#id<br>
+			<input type="checkbox" name="selector[]" id="selector" value="class">.class<br>
+			<input type="checkbox" name="selector[]" id="selector" value="element">element[@attribute]<br>
+			
+			<br>
+			
+			<b>Which of the following jQuery events do you usually encounter? (Please select at least one)</b><br>
+			<input type="checkbox" name="event[]" id="event" value="click">click<br>
+			<input type="checkbox" name="event[]" id="event" value="focus">focus<br>
+			<input type="checkbox" name="event[]" id="event" value="change">change<br>
+			<input type="checkbox" name="event[]" id="event" value="blur">blur<br>
+			<input type="checkbox" name="event[]" id="event" value="submit">submit<br>
+			
+			<br>
+			
+                        <input type="button" id="submit_prog" value='Submit' onclick="valida();">
+
+		</form>
+	</body>
+</html>

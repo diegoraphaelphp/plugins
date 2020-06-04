@@ -1,0 +1,6 @@
+syntax: glob
+*.elc
+*.pyc
+*~
+.DS_Store
+.idea*
